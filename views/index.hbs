@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <th>name</th>
+        <th>age</th>
+    </thead>
+    <tbody>
+        {{#each data}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.age}}</td>
+            <td><a href="/edit/{{@index}}">edit</a></td>
+            <td><a href="/delete/{{@index}}">delete</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<br />
+<a href="/add">Add user</a>

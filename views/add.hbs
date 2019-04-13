@@ -1,0 +1,12 @@
+{{!-- {{input name="firstName" placeholder="enter name" value=firstName}} --}}
+
+<form action="/add/" method="POST">
+    <label for="user">Enter name: </label>
+    <input id="user_name" type="text" name="name" value="{{firstName}}">
+    <br>
+    <label for="user">Enter age: </label>
+    <input id="user_name" type="text" name="age" value="{{age}}">
+    <br>
+    <input type="submit" value="OK">
+</form>
+<a href="/">Show users</a>
